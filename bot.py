@@ -21,4 +21,9 @@ async def hello(ctx):
 async def heh(ctx, count_heh = 5):
     await ctx.send("he" * count_heh)
 
+
+@bot.command()
+async def test(ctx, count_heh = 5):
+    await ctx.send("he" * count_heh)
+
 bot.run(TOKEN)
